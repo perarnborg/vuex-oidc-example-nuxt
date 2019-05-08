@@ -1,6 +1,8 @@
 # vuex-oidc-example-nuxt
 
-> 
+En example of how to use vuex-oidc (https://github.com/perarnborg/vuex-oidc) with Nuxt.
+
+vuex-oidc supports Nuxt from v1.16
 
 ## Build Setup
 
