@@ -25,7 +25,7 @@ export default {
       'oidcIsAuthenticated'
     ]),
     hasAccess: function () {
-      return this.oidcIsAuthenticated || this.$route.meta.isPublic
+      return this.oidcIsAuthenticated || this.oidcIsRoutePublic(this.$route)
     }
   },
   mounted() {
@@ -35,6 +35,9 @@ export default {
     window.removeEventListener('vuexoidc:userLoaded', this.userLoaded)
   },
   methods: {
+    ...mapGetters('oidc', [
+      'oidcIsRoutePublic'
+    ]),
     userLoaded: function (e) {
       console.log('I am listening to the user loaded event in vuex-oidc', e.detail)
     }
