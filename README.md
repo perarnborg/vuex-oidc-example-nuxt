@@ -2,7 +2,9 @@
 
 An example of how to use [vuex-oidc](https://github.com/perarnborg/vuex-oidc) with Nuxt.
 
-vuex-oidc supports Nuxt from v2.0
+vuex-oidc supports Nuxt from v2.0. Not tested with Nuxt v3.
+
+> :warning: **NOTICE**: vuex-oidc v4 introduces some breaking changes (such as dropping support for the implicit flow). This example uses v3.
 
 ## Build Setup
 
